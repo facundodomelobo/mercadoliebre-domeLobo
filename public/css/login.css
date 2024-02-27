@@ -1,0 +1,96 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ebebeb;
+  height: 100vh;
+}
+.main__header {
+  background-color: #eac926;
+  padding: 20px 20px 10px;
+}
+.main-header-logo {
+  height: 50px;
+}
+main {
+  width: 90%;
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+}
+input {
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  margin: 15px 0px;
+  height: 35px;
+  font-size: 15px;
+  padding: 10px;
+}
+.form-glass-effect {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+  font-size: 20px;
+}
+.send {
+  border: 0;
+  background: #1359c3;
+  border-radius: 8px;
+  color: #fff;
+  display: flex;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.send span {
+  background-color: #1359c3;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.send:hover {
+  border: -3px solid #01a0e1;
+}
+.send:hover span {
+  background: #01a0e1;
+}
+button:active {
+  transform: scale(0.9);
+}
+@media (min-width: 768px) {
+  .main-header-logo {
+    height: 50px;
+  }
+  form {
+    width: 90%;
+    margin: auto;
+  }
+  main {
+    width: 50%;
+  }
+  .body {
+    background-image: url(/images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media (min-width: 1020px) {
+  main {
+    width: 40%;
+  }
+  form {
+    width: 90%;
+    margin: auto;
+  }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mercado Liebre-Registrate</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/1e7dc2d332.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/register.css" />
+  </head>
+  <body>
+    <div class="body">
+      <header class="main__header">
+        <section class="header__logo__search">
+          <img class="main-header-logo"src="/images/logo-mercado-liebre.svg"alt="Logo de Mercado Liebre"/>
+      </header>
+      <main class="main">
+        <form action="/" method="post" class="form-glass-effect">
+          <label>
+            <input type="text" name="nombre_apellido" placeholder="Nombre y Apellido" required>
+          </label>
+          <br>
+          <label>
+            <input type="text" name="nombre_usuario" placeholder="Nombre de usuari@" required>
+          </label>
+          <br>
+          <label>
+            <input type="email" name="email"placeholder="Email" required>
+          </label>
+          <br>
+          <label><h3>Fecha de Nacimiento</h3>
+            <input type="date" name="fecha_nacimiento" required>
+          </label>
+        <br>
+          <label>
+          <input type="text" name="domicilio" placeholder="Domicilio" required></input>
+        </label>
+        <br>
+          <label ><h3>Perfil del usuario</h3></label>
+            <select name="perfil_usuario" required>
+              <option disabled selected >-Elije una opción-</option>
+              <option value="comprador">Comprar</option>
+              <option value="vendedor">Vender</option>
+            </select>
+        <br>
+        
+        <label><h3>Categorías de interés:</h3></label>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"name="categorias" value="electro">
+          Electro</label>
+          <label>
+          <input type="checkbox"name="categorias" value="moda">
+          Moda</label>
+          <label>
+          <input type="checkbox"name="categorias" value="hogar">
+          Hogar</label>
+          <label>
+          <input type="checkbox"name="categorias" value="jugueteria">
+          Juguetería</label>
+          <label>
+            <input type="checkbox"name="categorias" value="vida_sana">
+            Vida Sana</label>
+        </div>
+          <label for="foto_usuario"><h3>Foto de usuario:</h3></label>
+          <input type="file" name="foto_usuario" accept="image/*">
+      
+          <label>
+            <input type="password" name="password" placeholder="Contraseña"required>
+          </label>
+          <label>
+            <input type="password" name="confirmar_password" placeholder="Confirmar Contraseña"required>
+          </label>
+          <div class="buttons">
+            <button type="submit" class="send">
+              <span>Enviar</span>
+            </button>
+            <button type="reset" class="reset">
+              <span>Borrar Datos</span>
+            </button>
+        </div>
+      </form>
+    </main>
+    </div>
+  </body>
+</html>
