@@ -161,7 +161,7 @@ main h2 {
   font-size: 2em;
   margin-bottom: 10px;
 }
-@media (min-width: 361px) {
+@media (min-width: 768px) {
   .main__header {
     padding-bottom: 0px;
   }
@@ -278,8 +278,12 @@ main h2 {
   .main__nav-bar {
     margin-top: 30px;
   }
+  main h2 {
+    margin: 20px 50px 20px;
+  }
   .copy-header {
     width: 34%;
+    font-size: 16px;
   }
   .logo {
     width: 245px;
@@ -294,13 +298,5 @@ main h2 {
   .footer__section {
     height: 200px;
     display: flex;
-  }
-}
-@media (min-width: 768px) {
-  .copy-header {
-    font-size: 16px;
-  }
-  main h2 {
-    margin: 20px 50px 20px;
   }
 }
